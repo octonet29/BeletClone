@@ -1,15 +1,25 @@
+import Download from "@/components/Download/Download";
+import Banner from "@/components/Header/Banner";
+import Header from "@/components/Header/Header";
+import Price from "@/components/Price/Price";
+import { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import LoginPage from "@/components/auth/login/login";
+import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <LoginPage setEmail={undefined} setPassword={undefined} />
-    </main>
+    <div className={`flex min-h-screen flex-col items-center justify-between `}>
+      <Head>
+        <title>Home Netflix</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <Banner />
+      <Price />
+      <Download />
+    </div>
   );
-}
+};
+
+export default Home;

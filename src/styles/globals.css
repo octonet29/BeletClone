@@ -1,6 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.gradient_dot {
+  @apply translate-x-[11px] translate-y-[358.547px];
+  background: linear-gradient(
+    90deg,
+    rgb(15, 98, 254) 0%,
+    rgb(138, 63, 252) 100%
+  );
+}
+.text-utility-label-01 {
+  @apply text-xs leading-4 font-normal text-white;
+}
+.text-dark-text-strong {
+  @apply text-white;
+}
+.xl:text-fluid-xl-heading-06 {
+  @apply text-5xl leading-[3.5rem] font-bold;
+}
+.lg:text-fluid-lg-heading-06 {
+  @apply text-[2.625rem] leading-[3.125rem] font-semibold;
+}
+.md:text-fluid-md-heading-06 {
+  @apply text-4xl leading-[4.75rem] font-bold;
+}
+.text-fluid-sm-heading-06 {
+  @apply text-[1.75rem] leading-[4.75rem] font-bold;
+}
+.theme-dark {
+  @apply text-white;
+}
+.xl:text-fluid-xl-display-02 {
+  @apply text-6xl leading-[4.375rem] font-bold;
+}
+.lg:text-fluid-lg-display-02 {
+  @apply text-[3.375rem] leading-[4rem] font-bold;
+}
+.md:text-fluid-md-display-02 {
+  @apply text-[2.625rem] leading-[3.125rem] font-bold;
+}
+.sm:text-fluid-sm-display-02 {
+  @apply text-[2rem] leading-10 font-bold;
+}
 :after,
 :before {
   box-sizing: border-box;

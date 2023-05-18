@@ -9,7 +9,7 @@ const PriceBanner = () => {
             <p className="text-utility-label-01 text-dark-text-strong">
               Лучший выбор для семьи
             </p>
-            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-fluid-2xl-heading-06">
+            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-6xl leading-[4.375rem] font-bold">
               Telekom
             </h5>
           </div>
@@ -107,7 +107,7 @@ const PriceBanner = () => {
             <p className="text-utility-label-01 text-dark-text-strong">
               Лучший выбор для индивидуального пользования
             </p>
-            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-fluid-2xl-heading-06">
+            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-6xl leading-[4.375rem] font-bold">
               Individual
             </h5>
           </div>
@@ -203,7 +203,7 @@ const PriceBanner = () => {
             <p className="text-utility-label-01 text-dark-text-strong">
               Лучший выбор для Android TV
             </p>
-            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-fluid-2xl-heading-06">
+            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-6xl leading-[4.375rem] font-bold">
               AGTS
             </h5>
           </div>

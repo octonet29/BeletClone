@@ -4,10 +4,9 @@ const PriceTopText = () => {
   return (
     <div>
       <div className="relative z-10 mx-auto max-w-screen-2xl px-4 pt-20 md:px-8 lg:px-10">
-        <h3 className="w-full max-w-[24ch] text-fluid-sm-heading-06 text-dark-text-strong sm:text-fluid-sm-display-02 md:text-fluid-md-display-02 lg:text-fluid-lg-display-02 xl:text-fluid-xl-display-02 2xl:text-fluid-2xl-display-02">
-          Всего{" "}
-          <span className="text-dark-text-interactive">30 манат в месяц</span>{" "}
-          за неограниченное развлечение
+        <h3 className="w-full font-bold max-w-[24ch] text-[1.75rem] leading-[4.375rem] text-white sm:text-[2rem] md:text-[2.75rem] lg:text-[3.75rem] xl:text-[3.75rem] 2xl:text-[4.75rem]">
+          Всего <span className="text-[#3783f9]">30 манат в месяц</span> за
+          неограниченное развлечение
         </h3>
       </div>
     </div>

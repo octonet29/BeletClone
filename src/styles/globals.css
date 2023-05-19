@@ -27,9 +27,6 @@
 .text-fluid-sm-heading-06 {
   @apply text-[1.75rem] leading-[4.75rem] font-bold;
 }
-.theme-dark {
-  @apply text-white;
-}
 .xl:text-fluid-xl-display-02 {
   @apply text-6xl leading-[4.375rem] font-bold;
 }
@@ -42,6 +39,39 @@
 .sm:text-fluid-sm-display-02 {
   @apply text-[2rem] leading-10 font-bold;
 }
+.xl:text-fluid-xl-display-03 {
+  @apply text-[4.75rem] leading-[5.375rem] font-light;
+}
+.lg:text-fluid-lg-display-03 {
+  @apply text-6xl leading-[4.375rem] font-light;
+}
+.md:text-fluid-md-display-03 {
+  @apply text-[3.375rem] leading-[4rem] font-light;
+}
+.content {
+  @apply max-h-0 overflow-hidden transition-all duration-[cubic-bezier(0,1,0,1)]  border-b-[#e8e8ea] border-b border-solid;
+}
+.content.show {
+  @apply h-auto max-h-[625rem] transition-all duration-[cubic-bezier(1,0,1,0)]  bg-[white] rounded-md;
+}
+@media (min-width: 720px) {
+  #accordion {
+    @apply absolute w-[350px] left-[51.63%] right-[10.33%] top-[27.5%] bottom-[65.62%];
+  }
+}
+
+.text-light-text-strong {
+  @apply text-[#424248];
+}
+
+.prose {
+  @apply text-[color:var(--tw-prose-body)] max-w-prose;
+}
+
+.text-heading-compact-01 {
+  @apply text-sm leading-[1.125rem] font-semibold;
+}
+
 :after,
 :before {
   box-sizing: border-box;

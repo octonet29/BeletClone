@@ -2,6 +2,7 @@ import Download from "@/components/Download/Download";
 import Banner from "@/components/Header/Banner";
 import Header from "@/components/Header/Header";
 import Price from "@/components/Price/Price";
+import Accordion from "@/components/accordion/accordion.component";
 import { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Banner />
       <Price />
       <Download />
+      <Accordion />
     </div>
   );
 };

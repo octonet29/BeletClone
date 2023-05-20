@@ -6,6 +6,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
       backgroundImage: {
@@ -15,7 +16,7 @@ module.exports = {
       },
       keyframes: {
         scrollX: {
-          from: { left: "translateX(0)" },
+          from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },
       },
@@ -24,5 +25,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };

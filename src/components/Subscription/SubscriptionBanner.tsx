@@ -1,6 +1,8 @@
+"use client";
+import Link from "next/link";
 import React from "react";
 
-const PriceBanner = () => {
+const SubscriptionBanner: React.FC = (): JSX.Element => {
   return (
     <div>
       <ul className="relative z-10 mx-auto mt-10 grid max-w-screen-2xl grid-cols-1 gap-4 px-4 max-lg:grid-rows-3 sm:mt-16 lg:grid-cols-3 lg:px-6">
@@ -9,7 +11,7 @@ const PriceBanner = () => {
             <p className="text-utility-label-01 text-dark-text-strong">
               Лучший выбор для семьи
             </p>
-            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-6xl leading-[4.375rem] font-bold">
+            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-fluid-2xl-heading-06">
               Telekom
             </h5>
           </div>
@@ -76,9 +78,9 @@ const PriceBanner = () => {
             </li>
           </ul>
           <div className="mt-auto w-full p-4">
-            <a
-              href="https://belet.com.tm/film-connect"
-              className="inline-flex  items-center px-4  font-sans text-body-compact-01 rounded-lg ring-inset  focus:ring-1 focus:ring-offset-2 normal-case disabled:text-light-text-disabled  gap-2 disabled:cursor-not-allowed disabled:pointer-events-none ring-light-focus-inset ring-offset-light-focus-border disabled:bg-light-button-disabled theme-dark:ring-dark-focus-inset theme-dark:ring-offset-dark-focus-border theme-dark:disabled:bg-dark-button-disabled text-light-text-on-color bg-light-button-secondary hover:bg-light-button-secondary-hover active:bg-light-button-secondary-active disabled:text-light-text-disabled disabled:bg-light-button-disabled theme-dark:text-dark-text-on-color theme-dark:bg-dark-button-secondary theme-dark:hover:bg-dark-button-secondary-hover theme-dark:active:bg-dark-button-secondary-active theme-dark:disabled:text-dark-text-disabled theme-dark:disabled:bg-dark-button-disabled py-[0.9375rem] justify-between w-full theme-dark"
+            <Link
+              href={"https://belet.com.tm/film-connect"}
+              className="inline-flex  items-center px-4  font-sans text-body-compact-01 rounded-lg ring-inset  focus:ring-1 focus:ring-offset-2 normal-case disabled:text-light-text-disabled  gap-2 disabled:cursor-not-allowed disabled:pointer-events-none ring-light-focus-inset ring-offset-light-focus-border disabled:bg-light-button-disabled theme-dark:ring-dark-focus-inset theme-dark:ring-offset-dark-focus-border theme-dark:disabled:bg-dark-button-disabled text-light-text-on-color bg-light-button-secondary hover:bg-[rgb(51,51,58)] active:bg-light-button-secondary-active disabled:text-light-text-disabled disabled:bg-light-button-disabled theme-dark:text-dark-text-on-color theme-dark:bg-dark-button-secondary theme-dark:hover:bg-dark-button-secondary-hover theme-dark:active:bg-dark-button-secondary-active theme-dark:disabled:text-dark-text-disabled theme-dark:disabled:bg-dark-button-disabled py-[0.9375rem] justify-between w-full theme-dark"
             >
               Инструкция подключения{" "}
               <svg
@@ -93,7 +95,7 @@ const PriceBanner = () => {
               >
                 <path d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </li>
         <li
@@ -107,7 +109,7 @@ const PriceBanner = () => {
             <p className="text-utility-label-01 text-dark-text-strong">
               Лучший выбор для индивидуального пользования
             </p>
-            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-6xl leading-[4.375rem] font-bold">
+            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-fluid-2xl-heading-06">
               Individual
             </h5>
           </div>
@@ -178,9 +180,9 @@ const PriceBanner = () => {
             также через приложение Saray и Chapar.
           </p>
           <div className="w-full p-4">
-            <a
+            <Link
               href="tel:+99312750208"
-              className="inline-flex  items-center px-4  font-sans text-body-compact-01 rounded-lg ring-inset  focus:ring-1 focus:ring-offset-2 normal-case disabled:text-light-text-disabled  gap-2 disabled:cursor-not-allowed disabled:pointer-events-none ring-light-focus-inset ring-offset-light-focus-border disabled:bg-light-button-disabled theme-dark:ring-dark-focus-inset theme-dark:ring-offset-dark-focus-border theme-dark:disabled:bg-dark-button-disabled text-light-text-on-color bg-light-button-primary hover:bg-light-button-primary-hover active:bg-light-button-primary-active disabled:text-light-text-disabled disabled:bg-light-button-disabled theme-dark:text-dark-text-on-color theme-dark:bg-dark-button-primary theme-dark:hover:bg-dark-button-primary-hover theme-dark:active:bg-dark-button-primary-active theme-dark:disabled:text-dark-text-disabled theme-dark:disabled:bg-dark-button-disabled py-[0.9375rem] justify-between w-full theme-dark"
+              className="inline-flex  items-center px-4  font-sans text-body-compact-01 rounded-lg ring-inset  focus:ring-1 focus:ring-offset-2 normal-case disabled:text-light-text-disabled  gap-2 disabled:cursor-not-allowed disabled:pointer-events-none ring-light-focus-inset ring-offset-light-focus-border disabled:bg-light-button-disabled theme-dark:ring-dark-focus-inset theme-dark:ring-offset-dark-focus-border theme-dark:disabled:bg-dark-button-disabled text-light-text-on-color bg-light-button-primary hover:bg-[rgb(0,79,193)] active:bg-light-button-primary-active disabled:text-light-text-disabled disabled:bg-light-button-disabled theme-dark:text-dark-text-on-color theme-dark:bg-dark-button-primary theme-dark:hover:bg-dark-button-primary-hover theme-dark:active:bg-dark-button-primary-active theme-dark:disabled:text-dark-text-disabled theme-dark:disabled:bg-dark-button-disabled py-[0.9375rem] justify-between w-full theme-dark"
             >
               Узнайте как поключить{" "}
               <svg
@@ -195,7 +197,7 @@ const PriceBanner = () => {
               >
                 <path d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </li>
         <li className="flex h-full flex-col gap-8 rounded-2xl bg-dark-layer-01 bg-opacity-70 pt-6">
@@ -203,7 +205,7 @@ const PriceBanner = () => {
             <p className="text-utility-label-01 text-dark-text-strong">
               Лучший выбор для Android TV
             </p>
-            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-6xl leading-[4.375rem] font-bold">
+            <h5 className="mt-2 text-fluid-sm-heading-06 text-dark-text-strong md:text-fluid-md-heading-06 lg:text-fluid-lg-heading-06 xl:text-fluid-xl-heading-06 2xl:text-fluid-2xl-heading-06">
               AGTS
             </h5>
           </div>
@@ -255,9 +257,11 @@ const PriceBanner = () => {
             </li>
           </ul>
           <div className="mt-auto w-full p-4">
-            <a
-              href="https://belet.com.tm/news/how-to-activate-the-belet-film-service-through-ashts-iptv"
-              className="inline-flex  items-center px-4  font-sans text-body-compact-01 rounded-lg ring-inset  focus:ring-1 focus:ring-offset-2 normal-case disabled:text-light-text-disabled  gap-2 disabled:cursor-not-allowed disabled:pointer-events-none ring-light-focus-inset ring-offset-light-focus-border disabled:bg-light-button-disabled theme-dark:ring-dark-focus-inset theme-dark:ring-offset-dark-focus-border theme-dark:disabled:bg-dark-button-disabled text-light-text-on-color bg-light-button-secondary hover:bg-light-button-secondary-hover active:bg-light-button-secondary-active disabled:text-light-text-disabled disabled:bg-light-button-disabled theme-dark:text-dark-text-on-color theme-dark:bg-dark-button-secondary theme-dark:hover:bg-dark-button-secondary-hover theme-dark:active:bg-dark-button-secondary-active theme-dark:disabled:text-dark-text-disabled theme-dark:disabled:bg-dark-button-disabled py-[0.9375rem] justify-between w-full theme-dark"
+            <Link
+              href={
+                "https://belet.com.tm/news/how-to-activate-the-belet-film-service-through-ashts-iptv"
+              }
+              className="inline-flex  items-center px-4  font-sans text-body-compact-01 rounded-lg ring-inset  focus:ring-1 focus:ring-offset-2 normal-case disabled:text-light-text-disabled  gap-2 disabled:cursor-not-allowed disabled:pointer-events-none ring-light-focus-inset ring-offset-light-focus-border disabled:bg-light-button-disabled theme-dark:ring-dark-focus-inset theme-dark:ring-offset-dark-focus-border theme-dark:disabled:bg-dark-button-disabled text-light-text-on-color bg-light-button-secondary hover:bg-[rgb(51,51,58)] active:bg-light-button-secondary-active disabled:text-light-text-disabled disabled:bg-light-button-disabled theme-dark:text-dark-text-on-color theme-dark:bg-dark-button-secondary theme-dark:hover:bg-dark-button-secondary-hover theme-dark:active:bg-dark-button-secondary-active theme-dark:disabled:text-dark-text-disabled theme-dark:disabled:bg-dark-button-disabled py-[0.9375rem] justify-between w-full theme-dark"
             >
               Инструкция подключения{" "}
               <svg
@@ -272,7 +276,7 @@ const PriceBanner = () => {
               >
                 <path d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </li>
       </ul>
@@ -280,4 +284,4 @@ const PriceBanner = () => {
   );
 };
 
-export default PriceBanner;
+export default SubscriptionBanner;

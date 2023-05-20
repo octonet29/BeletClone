@@ -1,6 +1,7 @@
+'use client'
 import React from "react";
 
-const PriceTopText = () => {
+const SubscriptionTopText:React.FC = ():JSX.Element => {
   return (
     <div>
       <div className="relative z-10 mx-auto max-w-screen-2xl px-4 pt-20 md:px-8 lg:px-10">
@@ -13,4 +14,4 @@ const PriceTopText = () => {
   );
 };
 
-export default PriceTopText;
+export default SubscriptionTopText;

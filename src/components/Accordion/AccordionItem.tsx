@@ -1,11 +1,12 @@
+"use client";
 import { useState } from "react";
-import QuestionsAnswers from "./questions";
 import { FiPlus, FiX } from "react-icons/fi";
+import QuestionsAnswers from "@/data/Questions";
 
 // import arrow from "../../assets/icon-arrow-down.svg";
 // import "./accordionItem.styles.css";
 import Image from "next/image";
-const AccordionItem = () => {
+const AccordionItem: React.FC = (): JSX.Element => {
   const [selected, setSelected] = useState(null);
 
   const toggle = (index: any) => {
@@ -19,7 +20,7 @@ const AccordionItem = () => {
   return (
     <>
       <div className="mx-auto max-w-screen-lg py-14 md:py-20 lg:py-28">
-        <h3 className="w-full px-4 text-center text-fluid-sm-display-03 text-light-text-strong md:px-8 md:text-fluid-md-display-03 lg:px-10 lg:text-fluid-lg-display-03 xl:text-fluid-xl-display-03 2xl:text-[5.25rem] leading-[5.875rem] font-light">
+        <h3 className="w-full px-4 text-center text-fluid-sm-display-03 text-light-text-strong md:px-8 md:text-[3.375rem] leading-[4rem] font-light lg:px-10 lg:text-6xl leading-[4.375rem] font-light xl:text-[4.75rem] leading-[5.375rem] font-light 2xl:text-[5.25rem] leading-[5.875rem] font-light">
           <p>Отвечаем на вопросы</p>
         </h3>
         <div className="mt-10 px-4">
